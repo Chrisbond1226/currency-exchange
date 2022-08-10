@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+<body>
+    <header>
+<section class="hero is-primary">
+
+
+    <div class="hero-body">
+        <p class="title">
+            Currency Exchange
+        </p>
+        <p class="subtitle">
+            How far does your dollar go?
+        </p>
+    </div>
+</section>
+
+    </header>
+    <section class="section">
+        <h1 class="title">
+            
+            <button id="search">Search Country</button></h1>
+
+            <div class="dropdown is-active">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+                    <span>Content</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+                  <div class="dropdown-content">
+                    <div class="dropdown-item">
+                      <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="dropdown-item">
+                      <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item">
+                      This is a link
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+        </section>
+    <section class="section">
+<h1 class="title">American Dollars: $1.00</h1>
+  
+</section>
+<section class="section">
+    <h1 class="title" id="searchedCountry">Country Currency: 0.00</h1>
+      
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Currency Exchange</strong> by Christopher Bond, Christian Rangel, Luis 
+          </p>
+        </div>
+      </footer> 
+      <script src="./assets/js/script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
+</html>
