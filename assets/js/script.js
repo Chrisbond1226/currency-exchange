@@ -29,6 +29,7 @@ dropdown.addEventListener('click', function(event) {
 });
 
 var list=document.querySelector(".dropdown-content");
+var cCodeSelect=document.querySelector("#cCode");
 var currencyList={
     "AED": "United Arab Emirates Dirham",
     "AFN": "Afghan Afghani",
@@ -200,7 +201,7 @@ var currencyList={
     "ZWL": "Zimbabwean Dollar"
   }
 
-  for (const symbol in currencyList){
+ for (const symbol in currencyList){
     var hr= document.createElement("hr");
 var div=document.createElement("div");
 var p=document.createElement("p");
@@ -212,3 +213,18 @@ list.appendChild(hr);
 hr.classList.add("dropdown-divider");
     console.log(`${symbol}: ${currencyList[symbol]}`);
   }
+  
+  for (const symbol in currencyList){
+    var hr= document.createElement("hr");
+var option=document.createElement("option");
+option.textContent="USD";
+
+cCodeSelect.appendChild(option);
+div.classList.add("dropdown-item");
+div.appendChild(p);
+p.textContent=`${symbol}: ${currencyList[symbol]}`;
+list.appendChild(hr);
+hr.classList.add("dropdown-divider");
+    console.log(`${symbol}: ${currencyList[symbol]}`);
+  }
+  
